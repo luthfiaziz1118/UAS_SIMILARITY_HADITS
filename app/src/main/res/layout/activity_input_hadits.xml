@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InputHadits"
+    android:background="@drawable/batik">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Hadits"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Hadits  :"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_deskripsi"
+                android:padding="5dp"
+                android:background="@drawable/square"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:hint="   ex : Pernikahan,Sholat, etc."
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hadits Pertama : "
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_hadits_satu"
+                android:background="@drawable/square"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="   Isi Hadits Ke - 1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hadits Kedua     : "
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_hadits_dua"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/square"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="   Isi Hadits Ke - 2"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:background="@drawable/squarebtn2"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:background="@drawable/squarebtn"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
